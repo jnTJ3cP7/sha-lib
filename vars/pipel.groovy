@@ -1,4 +1,4 @@
-def call(List hogee) {
+def call(Map hogee) {
     echo 'shared library phase 2!!'
     // echo "${hogee}"
     echo "${hogee}".obj1
