@@ -2,11 +2,11 @@
 
 import org.yaml.snakeyaml.Yaml
 
-def call(def path) {
+def call(File path) {
     echo 'shared library phase 2!!'
 
     Yaml parser = new Yaml()
-    List example = parser.load(("${path}" as File).text)
+    List example = parser.load("${path}").text)
 
     example.each{println it.subject}
 }
