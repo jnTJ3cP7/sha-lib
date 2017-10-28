@@ -1,3 +1,7 @@
 def call() {
-    echo 'shared library phase 2!!'
+    stage ('shared lib2') {
+        steps {
+            echo 'shared library phase 2!!'
+        }
+    }
 }
