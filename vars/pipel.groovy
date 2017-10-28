@@ -1,5 +1,5 @@
 def call(def hogee) {
     echo 'shared library phase 2!!'
     echo "${hogee}"
-    echo "${hogee}".getClass()
+    echo "${hogee}".field1
 }
