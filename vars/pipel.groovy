@@ -3,5 +3,9 @@ def call(body) {
     body.resolveStrategy = Closure.DELEGATE_FIRST
     body.delegate = config
     body()
-    echo "${config.name}"
+
+    node {
+
+        echo "${config.name}"
+    }
 }
