@@ -1,7 +1,5 @@
-def call() {
-    stage ('shared lib22') {
-        steps {
-            echo 'shared library phase 2!!'
-        }
+def call(def hogee) {
+        echo 'shared library phase 2!!'
+        echo "${hogee}"
     }
 }
