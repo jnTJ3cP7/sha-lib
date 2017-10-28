@@ -1,12 +1,7 @@
-@Grab('org.yaml:snakeyaml:1.17')
-
-import org.yaml.snakeyaml.Yaml
-
-def call(File path) {
-    echo 'shared library phase 2!!'
-
-    Yaml parser = new Yaml()
-    List example = parser.load("${path}").text)
-
-    example.each{println it.subject}
+def call(body) {
+    def config = [:]
+    body.resolveStrategy = Closure.DELEGATE_FIRST
+    body.delegate = config
+    body()
+    echo "${config.name}"
 }
