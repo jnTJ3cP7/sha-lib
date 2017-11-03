@@ -9,7 +9,7 @@ def call(ver) {
     // ['/bin/sh', '-c', "ls -l"].execute().consumeProcessOutput(sout, serr)
     // "git show-ref -s -d --abbrev ${ver} | awk '/\\^{\\}\$/ {print \$1}'".execute().consumeProcessOutput(sout, serr)
     // def vvv = ['/bin/sh', '-c', "git show-ref -s -d --abbrev ${ver} | awk '/\\^{\\}\$/ {print \$1}'"].execute().text
-    def vvv = sh script: "git show-ref -s -d --abbrev testdayo | awk '/\^{}$/ {print $1}'", returnStdout: true
+    def vvv = sh script: "${cmd}" returnStdout: true
     // println sout
     // println serr
     // echo "${sout}"
