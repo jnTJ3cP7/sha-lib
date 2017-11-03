@@ -5,7 +5,8 @@ def call(ver) {
     sh "${cmd}"
 
     def sout = new StringBuilder(), serr = new StringBuilder()
-    ['/bin/sh', '-c', "${cmd}"].execute().consumeProcessOutput(sout, serr)
+    // ['/bin/sh', '-c', "${cmd}"].execute().consumeProcessOutput(sout, serr)
+    ['/bin/sh', '-c', "ls -l"].execute().consumeProcessOutput(sout, serr)
     // "git show-ref -s -d --abbrev ${ver} | awk '/\\^{\\}\$/ {print \$1}'".execute().consumeProcessOutput(sout, serr)
     // def vvv = ['/bin/sh', '-c', "git show-ref -s -d --abbrev ${ver} | awk '/\\^{\\}\$/ {print \$1}'"].execute().text
     println sout
