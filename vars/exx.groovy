@@ -1,4 +1,3 @@
-@Library('hogee')
 import com.co.Example
 
 def call(Map conf) {
