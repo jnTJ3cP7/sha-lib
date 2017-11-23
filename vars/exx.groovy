@@ -1,10 +1,12 @@
 import com.co.Example
 
-def call() {
+def call(Map conf) {
 
     echo 'called'
-    // Example ee = new Example()
-    // ee.exa()
-    Example.exa()
+
+    println conf
+
+    Example ee = new Example()
+    ee.exa()
 
 }
