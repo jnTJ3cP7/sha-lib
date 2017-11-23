@@ -20,7 +20,7 @@ class Example implements Serializable {
 
     def isDirExisting() {
         println conf.pathh
-        steps.fileExists conf.pathh
+        return steps.fileExists conf.pathh
     }
 
 }
