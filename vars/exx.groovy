@@ -7,6 +7,6 @@ def call(Map conf) {
     println conf
 
     Example ee = new Example()
-    ee.exa()
+    ee.exa(conf)
 
 }

@@ -2,6 +2,7 @@ package com.co
 
 // import com.cloudbees.groovy.cps.NonCPS
 
-def exa() {
+def exa(Map conf) {
     echo 'hogeeee'
+    println conf
 }
