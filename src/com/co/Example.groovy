@@ -5,17 +5,17 @@ import com.cloudbees.groovy.cps.NonCPS
 class Example implements Serializable {
 
     def steps
-    String sta
+    Map conf
 
-    Example(steps, sta) {
+    Example(steps, conf) {
         this.steps = steps
-        this.sta = sta
+        this.conf = conf
     }
 
-    @NonCPS
-    def exa(Map conf) {
+    // @NonCPS
+    def exa() {
         println conf
-        steps.echo sta
+        steps.echo conf.field2
     }
 
 }
