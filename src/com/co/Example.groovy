@@ -21,8 +21,7 @@ class Example implements Serializable {
     @NonCPS
     def isDirExisting() {
         println conf.pathh
-        // return steps.fileExists(conf.pathh)
-        steps.fileExists(conf.pathh)
+        steps.fileExists conf.pathh
     }
 
 }
