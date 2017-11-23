@@ -18,4 +18,9 @@ class Example implements Serializable {
         steps.echo conf.field2
     }
 
+    def isDirExisting() {
+        println conf.pathh
+        steps.fileExists conf.pathh
+    }
+
 }
