@@ -18,9 +18,10 @@ class Example implements Serializable {
         steps.echo conf.field2
     }
 
+    @NonCPS
     def isDirExisting() {
         println conf.pathh
-        return steps.fileExists conf.pathh
+        return steps.fileExists(conf.pathh)
     }
 
 }
