@@ -2,7 +2,9 @@ package com.co
 
 // import com.cloudbees.groovy.cps.NonCPS
 
-def exa(Map conf) {
-    echo 'hogeeee'
-    println conf
+class Example implements Serializable {
+    def exa(Map conf) {
+        echo 'hogeeee'
+        println conf
+    }
 }
