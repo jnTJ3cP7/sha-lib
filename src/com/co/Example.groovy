@@ -2,9 +2,9 @@ package com.co
 
 import com.cloudbees.groovy.cps.NonCPS
 
-// class Example implements Serializable {
+class Example implements Serializable {
 
-    def sta  = 'fugaa'
+    def sta
     Example(String sta) {this.sta = sta}
 
     @NonCPS
@@ -14,4 +14,4 @@ import com.cloudbees.groovy.cps.NonCPS
         echo sta
     }
 
-// }
+}
