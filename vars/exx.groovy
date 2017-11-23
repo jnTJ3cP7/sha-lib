@@ -4,7 +4,7 @@ def call(Map conf) {
 
     echo 'called'
 
-    Example ee = new Example('fugaaaa')
+    Example ee = new Example(this)
     ee.exa(conf)
 
 }
